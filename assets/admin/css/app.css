@@ -1,0 +1,30 @@
+.ipopup-div {
+	margin: 10px 0;
+}
+.ipopup-div.ipopup-div--hidden {
+	display: none;
+}
+.ipopup-div .ipopup-label {
+	margin-bottom: 5px;
+    display: block;
+}
+.ipopup-div input[type="text"],
+.ipopup-div select {
+	width: 100%;
+}
+.ipopup-div table th {
+	width: 30%;
+}
+.ipopup-div table td textarea {
+	width: 100%;
+	resize: vertical;
+	min-height: 100px;
+}
+.ipopup-div table tr.has-multi td:not(:last-child) {
+	border-right: 2px solid rgba(214, 214, 214, 0.55);
+}
+.ipopup-div .ipopup-div__group {
+	display: flex;
+	justify-content: space-around;
+	margin: 5px 0;
+}

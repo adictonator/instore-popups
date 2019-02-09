@@ -1,0 +1,92 @@
+/**
+* Fade animation.
+*/
+@keyframes instoreFade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/**
+* From Right animation.
+*/
+@keyframes instoreFromRight {
+	0% {
+		transform: translateX(calc(100vw + 100%));
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/**
+* From Left animation.
+*/
+@keyframes instoreFromLeft {
+	0% {
+		transform: translateX(calc(-100vw - 100%));
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/**
+* From Bottom animation.
+*/
+@keyframes instoreFromBottom {
+	0% {
+		transform: translateY(calc(100vw + 100%));
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/**
+* From Top animation.
+*/
+@keyframes instoreFromTop {
+	0% {
+		transform: translateY(calc(-100vw - 100%));
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.instore-anim-fade,
+.instore-anim-fade--close {
+	animation: instoreFade 1.5s;
+}
+
+.instore-anim-right {
+	animation: instoreFromRight 1.5s;
+}
+.instore-anim-right--close {
+	animation: instoreFromLeft 1.5s;
+}
+
+.instore-anim-left {
+	animation: instoreFromLeft 1.5s;
+}
+.instore-anim-left--close {
+	animation: instoreFromRight 1.5s;
+}
+
+.instore-anim-bottom {
+	animation: instoreFromBottom 1.5s;
+}
+.instore-anim-bottom--close {
+	animation: instoreFromTop 1.5s;
+}
+
+.instore-anim-top {
+	animation: instoreFromTop 1.5s;
+}
+.instore-anim-top--close {
+	animation: instoreFromBottom 1.5s;
+}

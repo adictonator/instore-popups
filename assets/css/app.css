@@ -1,0 +1,31 @@
+@import 'animations.css';
+
+.ipopup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipopup .ipopup__inner {
+	position: relative;
+	background: #FFF;
+    display: flex;
+    width: 800px;
+    min-height: 300px;
+}
+
+.ipopup .ipopup__close {
+    position: absolute;
+    right: 0;
+    top: -50px;
+    font-size: 35px;
+    color: #000;
+    cursor: pointer;
+}
